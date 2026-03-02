@@ -1,0 +1,10 @@
+# Core
+nbformat
+pandas
+
+# Visualization
+plotly-express
+
+# Dev tools (optional)
+pytest
+ruff
