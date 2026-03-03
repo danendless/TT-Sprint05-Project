@@ -9,13 +9,13 @@ dependencies = [
   "plotly-express",
   "streamlit",
   "nbformat",
-  "ipykernel"
 ]
 
 [project.optional-dependencies]
 dev = [
   "pytest>=8",
-  "ruff>=0.3"
+  "ruff>=0.3",
+  "ipykernel"
 ]
 
 [tool.ruff]
