@@ -1,6 +1,6 @@
 # TT_Sprint05_Project
 
-## V0.3.1
+## V0.3.2
 
 ### Repositório no GitHub
 https://github.com/danendless/TT-Sprint05-Project
