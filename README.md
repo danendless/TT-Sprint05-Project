@@ -1,64 +1,24 @@
 # TT_Sprint05_Project
 
-## Setup for Development (recommended)
+## V0.3.1
 
-### 1) Create and activate a project environment
+### Repositório no GitHub
+https://github.com/danendless/TT-Sprint05-Project
 
-    mamba create -n <ENV_NAME> python=3.12 pip -y
-    mamba activate <ENV_NAME>
+### URL do Aplicativo Web rodando em Render
+https://tt-sprint05-project.onrender.com
 
-### 2) (Optional) Install heavy scientific packages via conda first
+### Projeto de Applicativo Web de Gráficos
 
-Use this only if you prefer conda-forge builds for compiled packages, or if pip install fails.
+Esse projeto utiliza a framework Streamlit para criar um aplicativo web que disponibiliza a visualização de dois gráficos:
 
-    mamba install -c conda-forge numpy pandas scipy scikit-learn pyarrow -y
+    - Histograma
+    - Gráfico de Dispersão
 
-### 3.1) Install this project + dependencies from pyproject.toml (editable mode install)
+Ambos os gráficos são baseados no banco de dados contido em vehicles_us.csv, que pode ser acessado na seguinte URL:
 
-    python3 -m pip install -e ".[dev]"
+    https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/Data_NEW_4_sprint/vehicles.csv
 
-This installs:
-- Runtime dependencies
-- Development tools (pytest, ruff, etc.)
-- Your project in editable mode
+É possível utilizar a funcionalidade de button do framework Streamlit para criar um Histograma no navegador ao clicar em "Criar Histograma" e também utilizar a funcionalidade de checkbox ao selecionar "Criar um Gráfico de Dispersão". A segunda funcionalidade tem a possibilidade de desmarcar a caixa para fazer o gráfico desaparecer e marcá-la novamente para que o gráfico seja gerado novamente.
 
-### 3.2) Alternatively, install dev tools via pip manually and runtime dependencies from requirements.txt and anything else still missing from pyproject.toml
 
-    python3 -m pip install -r requirements.txt
-    python3 -m pip install devtool1 devtool2 missingpackage1 missingpackage2
-
-### 4) Quick checks
-
-    python -V
-    pytest
-    ruff check .
-
-### 5) VS Code
-
-- Open the folder in VS Code (WSL)
-- Select the interpreter that matches <ENV_NAME>
-- If using notebooks, select the kernel that matches <ENV_NAME> (install ipykernel in the env if needed)
-
-Note:
-`python -m ipykernel install ...` is generally only needed for standalone Jupyter (browser Jupyter Notebook/Lab), not VS Code.
-
----
-
-## Deployment (Render / simple pip deploy)
-
-Render typically installs from requirements.txt if not configured otherwise(runtime dependencies only):
-
-    pip install -r requirements.txt
-
-Keep requirements.txt minimal (top-level runtime dependencies only).
-Development tools (pytest, ruff, ipykernel) should NOT be included.
-
----
-
-## Notes
-
-- Ruff configuration lives in pyproject.toml.
-- Runtime + development dependencies are defined in pyproject.toml.
-- `.[dev]` installs development extras.
-- requirements.txt is for deployment/runtime installs (e.g., Render).
-- VS Code workspace settings/extensions live in .vscode/

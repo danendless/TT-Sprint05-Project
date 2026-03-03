@@ -1,6 +1,7 @@
 # Core
 nbformat
 pandas
+streamlit
 
 # Visualization
 plotly-express
